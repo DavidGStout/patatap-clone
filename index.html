@@ -7,13 +7,14 @@
 	<script type="text/paperscript" canvas="myCanvas"></script>
 	<script type="text/paperscript" canvas="myCanvas">
 	
-	var path = new Path();
-	path.strokeColor = 'green';
-	var start = new Point(100, 100);
-	path.moveTo(start);
-	path.lineTo(start + [ 100, -50 ]);
-	var myCircle = new Path.Circle(new Point(100, 70), 50);
-	myCircle.fillColor = 'yellow';
+	function onKeyDown(event) {
+	var maxPoint = new Point(view.size.width, view.size.height);
+	var randomPoint = Point.random();
+	var point = maxPoint * randomPoint;
+		
+	new Path.Circle(point, 10).fillColor = "orange";
+	}
+
 	</script>
 </head>
 <body>
