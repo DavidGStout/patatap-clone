@@ -1,38 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<script type="text/javascript" src="paper-full.js"></script>
-	<link rel="stylesheet" type="text/css" href="circles.css">
-	<script type="text/paperscript" canvas="myCanvas"></script>
-	<script type="text/paperscript" canvas="myCanvas">
-	
-		var circles = [];
-
-	function onKeyDown(event) {
-	var maxPoint = new Point(view.size.width, view.size.height);
-	var randomPoint = Point.random();
-	var point = maxPoint * randomPoint;
-		
-	circles.push(new Path.Circle(point, 10).fillColor = "orange");
-	}
-
-
-	var animatedCircle = new Path.Circle(new Point(300,300), 100);
-	animatedCircle.fillColor = "red";
-
-	function onFrame(event){
-	for(var i = 0; i < circles.length; i++){
-	circles[i].fillColor.hue += 1;
-}
-	animatedCircle.fillColor.hue += 1;
-	animatedCircle.scale(.9);
-}
-
-
-	</script>
+	<title>Patatap Clone</title>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 </body>
 </html>
